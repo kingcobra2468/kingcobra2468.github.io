@@ -98,3 +98,9 @@
 		opacity: 0.4;
 	}
 }
+
+@supports (-webkit-touch-callout: none) {
+  #info {
+    border-radius: 0;
+  }
+}
