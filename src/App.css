@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,15 +46,15 @@
 
 .neon-text {
   text-shadow:
-      0 0 1px #5b97f8,
-      1px 1px 2px #3b82f6,
-      1px 1px 5px #3b82f6,
-      0 0 12px #3b82f6,
-      1px 1px 20px #3b82f6,
-      0 0 25px #3b82f6,
-      0 0 26px #3b82f6,
-      0 0 35px #6b21a8;
-      /*
+    0 0 1px #5b97f8,
+    1px 1px 2px #3b82f6,
+    1px 1px 5px #3b82f6,
+    0 0 12px #3b82f6,
+    1px 1px 20px #3b82f6,
+    0 0 25px #3b82f6,
+    0 0 26px #3b82f6,
+    0 0 35px #6b21a8;
+  /*
       0 0 42px #0fa,
       0 0 82px #0fa,
       0 0 92px #0fa,
@@ -81,22 +82,36 @@
   }
 }
 
-.flicker-slow{
+.flicker-slow {
   animation: flicker 20s linear infinite;
 }
 
-.flicker-fast{
+.flicker-fast {
   animation: flicker 10s linear infinite;
 }
 
 @keyframes flicker {
-	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
     opacity: .99;
-		
-	}
-	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-		opacity: 0.4;
-	}
+
+  }
+
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
 }
 
 @supports (-webkit-touch-callout: none) {
